@@ -1,0 +1,36 @@
+{
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "schemes": [
+    "http",
+    "https"
+  ],
+  "swagger": "2.0",
+  "info": {
+    "description": "this is to show how to write RESTful APIs in golang.\nthat is to provide a detailed overview of the language specs",
+    "title": "Account API.",
+    "contact": {
+      "name": "Kerem Gocen",
+      "email": "my@email.com"
+    },
+    "version": "1.0.0"
+  },
+  "host": "localhost:8080",
+  "paths": {},
+  "securityDefinitions": {
+    "api_key": {
+      "type": "apiKey",
+      "name": "KEY",
+      "in": "header"
+    }
+  },
+  "security": [
+    {
+      "api_key": []
+    }
+  ]
+}
